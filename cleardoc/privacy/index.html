@@ -3,67 +3,195 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy — ClearDoc</title>
+  <title>Privacy Policy — ClearDoc by Vivabyte</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink: #0f0e0c;
+      --ink-muted: #6b6a67;
+      --ink-faint: #b5b4b0;
+      --paper: #f7f5f0;
+      --accent: #c84b2f;
+      --border: rgba(15,14,12,0.1);
+      --serif: 'DM Serif Display', Georgia, serif;
+      --sans: 'Instrument Sans', system-ui, sans-serif;
+      --mono: 'DM Mono', 'Courier New', monospace;
+    }
+
+    html { scroll-behavior: smooth; }
+
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background: #ffffff;
-      color: #1a1a1a;
-      font-size: 18px;
-      line-height: 1.7;
+      font-family: var(--sans);
+      background: var(--paper);
+      color: var(--ink);
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
     }
-    header {
-      background: #1A56DB;
-      color: #fff;
-      padding: 24px 20px;
+
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.25rem 2.5rem;
+      background: var(--paper);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(8px);
     }
-    header h1 {
-      font-size: 1.5rem;
-      font-weight: 700;
-      letter-spacing: -0.3px;
+
+    .nav-logo {
+      font-family: var(--mono);
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      text-decoration: none;
+      display: flex; align-items: center; gap: 8px;
     }
-    header p {
-      font-size: 0.9rem;
-      opacity: 0.85;
-      margin-top: 4px;
+
+    .nav-logo-dot {
+      width: 7px; height: 7px; border-radius: 50%;
+      background: var(--accent);
+      display: inline-block;
     }
+
+    .nav-back {
+      font-size: 0.875rem;
+      color: var(--ink-muted);
+      text-decoration: none;
+      display: flex; align-items: center; gap: 0.4rem;
+      transition: color 0.15s;
+    }
+
+    .nav-back:hover { color: var(--ink); }
+
     main {
       max-width: 720px;
       margin: 0 auto;
-      padding: 40px 20px 80px;
+      padding: 8rem 2.5rem 6rem;
     }
+
+    .page-eyebrow {
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-family: var(--serif);
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      margin-bottom: 0.75rem;
+    }
+
+    .updated {
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      color: var(--ink-faint);
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+
     h2 {
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: #1A56DB;
-      margin-top: 40px;
-      margin-bottom: 10px;
+      font-family: var(--serif);
+      font-size: 1.4rem;
+      line-height: 1.2;
+      color: var(--ink);
+      margin-top: 3rem;
+      margin-bottom: 0.75rem;
     }
-    p { margin-bottom: 16px; }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: var(--ink-muted);
+      margin-bottom: 1rem;
+    }
+
     ul {
-      padding-left: 22px;
-      margin-bottom: 16px;
+      padding-left: 1.25rem;
+      margin-bottom: 1rem;
     }
-    li { margin-bottom: 8px; }
-    a { color: #1A56DB; }
+
+    li {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: var(--ink-muted);
+      margin-bottom: 0.4rem;
+    }
+
+    a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.15s; }
+    a:hover { border-bottom-color: var(--accent); }
+
     footer {
-      text-align: center;
+      border-top: 1px solid var(--border);
+      padding: 2rem 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 72rem;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-logo {
+      font-family: var(--mono);
       font-size: 0.85rem;
-      color: #888;
-      padding: 24px 20px;
-      border-top: 1px solid #eee;
+      color: var(--ink-muted);
+    }
+
+    .footer-links {
+      display: flex; gap: 1.5rem; flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      font-size: 0.8rem;
+      color: var(--ink-faint);
+      border: none;
+      transition: color 0.15s;
+    }
+
+    .footer-links a:hover { color: var(--ink-muted); }
+
+    .footer-copy {
+      font-size: 0.75rem;
+      color: var(--ink-faint);
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      nav { padding: 1rem 1.25rem; }
+      main { padding: 7rem 1.25rem 4rem; }
+      footer { padding: 1.5rem 1.25rem; }
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>ClearDoc Privacy Policy</h1>
-  <p>Last updated: May 24, 2026</p>
-</header>
+<nav>
+  <a href="https://vivabyte.app" class="nav-logo">
+    <span class="nav-logo-dot"></span>
+    vivabyte
+  </a>
+  <a href="https://vivabyte.app" class="nav-back">
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M11 7H3M6 3L2 7l4 4"/></svg>
+    vivabyte.app
+  </a>
+</nav>
 
 <main>
+  <p class="page-eyebrow">// ClearDoc — Legal</p>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: May 24, 2026</p>
 
   <p>Vivabyte LLC ("we," "us," or "our") operates the ClearDoc mobile application (the "App"). This Privacy Policy explains how we handle information when you use ClearDoc.</p>
 
@@ -104,16 +232,17 @@
 
   <h2>8. Contact Us</h2>
   <p>If you have questions or concerns about this Privacy Policy, please contact us at:</p>
-  <p>
-    Vivabyte LLC<br />
-    <a href="mailto:ron@vivabyte.app">ron@vivabyte.app</a><br />
-    <a href="https://vivabyte.app">vivabyte.app</a>
-  </p>
-
+  <p>Vivabyte LLC<br /><a href="mailto:ron@vivabyte.app">ron@vivabyte.app</a></p>
 </main>
 
 <footer>
-  &copy; 2026 Vivabyte LLC. All rights reserved.
+  <span class="footer-logo">vivabyte.app</span>
+  <div class="footer-links">
+    <a href="/cleardoc/privacy">Privacy Policy</a>
+    <a href="/cleardoc/terms">Terms of Service</a>
+    <a href="mailto:ron@vivabyte.app">Contact</a>
+  </div>
+  <p class="footer-copy">© 2026 Vivabyte LLC. All rights reserved.</p>
 </footer>
 
 </body>

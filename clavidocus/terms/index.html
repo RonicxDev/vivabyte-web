@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service — Clavidocus by Vivabyte</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink: #0f0e0c;
+      --ink-muted: #6b6a67;
+      --ink-faint: #b5b4b0;
+      --paper: #f7f5f0;
+      --accent: #c84b2f;
+      --border: rgba(15,14,12,0.1);
+      --serif: 'DM Serif Display', Georgia, serif;
+      --sans: 'Instrument Sans', system-ui, sans-serif;
+      --mono: 'DM Mono', 'Courier New', monospace;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--sans);
+      background: var(--paper);
+      color: var(--ink);
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.25rem 2.5rem;
+      background: var(--paper);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(8px);
+    }
+
+    .nav-logo {
+      font-family: var(--mono);
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      text-decoration: none;
+      display: flex; align-items: center; gap: 8px;
+    }
+
+    .nav-logo-dot {
+      width: 7px; height: 7px; border-radius: 50%;
+      background: var(--accent);
+      display: inline-block;
+    }
+
+    .nav-back {
+      font-size: 0.875rem;
+      color: var(--ink-muted);
+      text-decoration: none;
+      display: flex; align-items: center; gap: 0.4rem;
+      transition: color 0.15s;
+    }
+
+    .nav-back:hover { color: var(--ink); }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 8rem 2.5rem 6rem;
+    }
+
+    .page-eyebrow {
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-family: var(--serif);
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      margin-bottom: 0.75rem;
+    }
+
+    .updated {
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      color: var(--ink-faint);
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2 {
+      font-family: var(--serif);
+      font-size: 1.4rem;
+      line-height: 1.2;
+      color: var(--ink);
+      margin-top: 3rem;
+      margin-bottom: 0.75rem;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: var(--ink-muted);
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 1.25rem;
+      margin-bottom: 1rem;
+    }
+
+    li {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: var(--ink-muted);
+      margin-bottom: 0.4rem;
+    }
+
+    a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.15s; }
+    a:hover { border-bottom-color: var(--accent); }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 72rem;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-logo {
+      font-family: var(--mono);
+      font-size: 0.85rem;
+      color: var(--ink-muted);
+    }
+
+    .footer-links {
+      display: flex; gap: 1.5rem; flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      font-size: 0.8rem;
+      color: var(--ink-faint);
+      border: none;
+      transition: color 0.15s;
+    }
+
+    .footer-links a:hover { color: var(--ink-muted); }
+
+    .footer-copy {
+      font-size: 0.75rem;
+      color: var(--ink-faint);
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      nav { padding: 1rem 1.25rem; }
+      main { padding: 7rem 1.25rem 4rem; }
+      footer { padding: 1.5rem 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="https://vivabyte.app" class="nav-logo">
+    <span class="nav-logo-dot"></span>
+    vivabyte
+  </a>
+  <a href="https://vivabyte.app" class="nav-back">
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M11 7H3M6 3L2 7l4 4"/></svg>
+    vivabyte.app
+  </a>
+</nav>
+
+<main>
+  <p class="page-eyebrow">// Clavidocus — Legal</p>
+  <h1>Terms of Service</h1>
+  <p class="updated">Last updated: May 24, 2026</p>
+
+  <p>These Terms of Service ("Terms") govern your use of the Clavidocus mobile application (the "App") operated by Vivabyte LLC, a Wyoming limited liability company ("Vivabyte," "we," "us," or "our"). By downloading or using the App, you agree to be bound by these Terms.</p>
+
+  <h2>1. Description of Service</h2>
+  <p>Clavidocus allows users to photograph documents and receive plain-English explanations of the document's content, powered by Anthropic's Claude AI. The App is intended to help users better understand documents such as medical forms, legal notices, insurance paperwork, and other complex materials.</p>
+  <p>Clavidocus is an informational tool only. It does not provide legal, medical, financial, or professional advice.</p>
+
+  <h2>2. Eligibility</h2>
+  <p>You must be at least 13 years old to use the App. By using the App, you represent that you meet this age requirement. If you are using the App on behalf of another person (such as an elderly family member), you accept these Terms on their behalf.</p>
+
+  <h2>3. Acceptable Use</h2>
+  <p>You agree to use the App only for lawful purposes. You may not:</p>
+  <ul>
+    <li>Submit documents containing another person's sensitive personal information without their consent.</li>
+    <li>Attempt to reverse-engineer, modify, or misuse the App.</li>
+    <li>Use the App in any way that violates applicable local, state, national, or international law.</li>
+    <li>Use the App to process documents you do not have the right to access or share.</li>
+  </ul>
+
+  <h2>4. No Professional Advice</h2>
+  <p>The explanations provided by Clavidocus are generated by an AI and are intended for general informational purposes only. They do not constitute legal, medical, financial, or any other professional advice. Always consult a qualified professional for decisions based on document content.</p>
+
+  <h2>5. AI-Generated Content</h2>
+  <p>Explanations are generated by Anthropic's Claude AI model. While we strive for accuracy, AI-generated content may occasionally be incomplete, inaccurate, or misleading. Vivabyte does not warrant the accuracy, completeness, or fitness for any particular purpose of any AI-generated explanation.</p>
+
+  <h2>6. Intellectual Property</h2>
+  <p>The Clavidocus app, including its design, branding, and code, is owned by Vivabyte LLC and protected by applicable intellectual property laws. You are granted a limited, non-exclusive, non-transferable license to use the App for personal, non-commercial purposes.</p>
+
+  <h2>7. Disclaimer of Warranties</h2>
+  <p>THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. VIVABYTE DOES NOT WARRANT THAT THE APP WILL BE UNINTERRUPTED, ERROR-FREE, OR FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS.</p>
+
+  <h2>8. Limitation of Liability</h2>
+  <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, VIVABYTE LLC SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS, DATA, OR GOODWILL, ARISING OUT OF OR IN CONNECTION WITH YOUR USE OF THE APP, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
+
+  <h2>9. Governing Law</h2>
+  <p>These Terms are governed by the laws of the State of Wyoming, without regard to its conflict of law provisions. Any disputes arising under these Terms shall be resolved in the courts of Wyoming.</p>
+
+  <h2>10. Changes to These Terms</h2>
+  <p>We reserve the right to modify these Terms at any time. Changes will be effective upon posting the updated Terms with a new "Last updated" date. Your continued use of the App after any changes constitutes acceptance of the revised Terms.</p>
+
+  <h2>11. Contact</h2>
+  <p>Questions about these Terms? Contact us at:</p>
+  <p>Vivabyte LLC<br /><a href="mailto:ron@vivabyte.app">ron@vivabyte.app</a></p>
+</main>
+
+<footer>
+  <span class="footer-logo">vivabyte.app</span>
+  <div class="footer-links">
+    <a href="/clavidocus/privacy">Privacy Policy</a>
+    <a href="/clavidocus/terms">Terms of Service</a>
+    <a href="mailto:ron@vivabyte.app">Contact</a>
+  </div>
+  <p class="footer-copy">© 2026 Vivabyte LLC. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>End User License Agreement — Clavidocus by Vivabyte</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink: #0f0e0c;
+      --ink-muted: #6b6a67;
+      --ink-faint: #b5b4b0;
+      --paper: #f7f5f0;
+      --accent: #c84b2f;
+      --border: rgba(15,14,12,0.1);
+      --serif: 'DM Serif Display', Georgia, serif;
+      --sans: 'Instrument Sans', system-ui, sans-serif;
+      --mono: 'DM Mono', 'Courier New', monospace;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--sans);
+      background: var(--paper);
+      color: var(--ink);
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.25rem 2.5rem;
+      background: var(--paper);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(8px);
+    }
+
+    .nav-logo {
+      font-family: var(--mono);
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      text-decoration: none;
+      display: flex; align-items: center; gap: 8px;
+    }
+
+    .nav-logo-dot {
+      width: 7px; height: 7px; border-radius: 50%;
+      background: var(--accent);
+      display: inline-block;
+    }
+
+    .nav-back {
+      font-size: 0.875rem;
+      color: var(--ink-muted);
+      text-decoration: none;
+      display: flex; align-items: center; gap: 0.4rem;
+      transition: color 0.15s;
+    }
+
+    .nav-back:hover { color: var(--ink); }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 8rem 2.5rem 6rem;
+    }
+
+    .page-eyebrow {
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-family: var(--serif);
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      margin-bottom: 0.75rem;
+    }
+
+    .updated {
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      color: var(--ink-faint);
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2 {
+      font-family: var(--serif);
+      font-size: 1.4rem;
+      line-height: 1.2;
+      color: var(--ink);
+      margin-top: 3rem;
+      margin-bottom: 0.75rem;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: var(--ink-muted);
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 1.25rem;
+      margin-bottom: 1rem;
+    }
+
+    li {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: var(--ink-muted);
+      margin-bottom: 0.4rem;
+    }
+
+    a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.15s; }
+    a:hover { border-bottom-color: var(--accent); }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 72rem;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-logo {
+      font-family: var(--mono);
+      font-size: 0.85rem;
+      color: var(--ink-muted);
+    }
+
+    .footer-links {
+      display: flex; gap: 1.5rem; flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      font-size: 0.8rem;
+      color: var(--ink-faint);
+      border: none;
+      transition: color 0.15s;
+    }
+
+    .footer-links a:hover { color: var(--ink-muted); }
+
+    .footer-copy {
+      font-size: 0.75rem;
+      color: var(--ink-faint);
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      nav { padding: 1rem 1.25rem; }
+      main { padding: 7rem 1.25rem 4rem; }
+      footer { padding: 1.5rem 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="https://vivabyte.app" class="nav-logo">
+    <span class="nav-logo-dot"></span>
+    vivabyte
+  </a>
+  <a href="https://vivabyte.app" class="nav-back">
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M11 7H3M6 3L2 7l4 4"/></svg>
+    vivabyte.app
+  </a>
+</nav>
+
+<main>
+  <p class="page-eyebrow">// Clavidocus — Legal</p>
+  <h1>End User License Agreement</h1>
+  <p class="updated">Last updated: June 22, 2026</p>
+
+  <p>This End User License Agreement ("Agreement") is a binding agreement between you ("you" or "User") and Vivabyte LLC, a Wyoming limited liability company ("Vivabyte," "we," "us," or "our"). This Agreement governs your use of the Clavidocus mobile application and any associated services (collectively, the "App"). By downloading, installing, or using the App, you agree to be bound by this Agreement. If you do not agree, do not download, install, or use the App.</p>
+
+  <h2>1. License Grant</h2>
+  <p>Subject to your compliance with this Agreement, Vivabyte grants you a limited, non-exclusive, non-transferable, non-sublicensable, revocable license to download and use the App on any device that you own or control, solely for your personal, non-commercial purposes. This license does not allow you to use the App on any device you do not own or control.</p>
+
+  <h2>2. Scope of License</h2>
+  <p>You may not, and you agree not to:</p>
+  <ul>
+    <li>Copy, modify, adapt, translate, or create derivative works of the App;</li>
+    <li>Reverse-engineer, decompile, disassemble, or otherwise attempt to derive the source code of the App, except to the extent such restriction is prohibited by applicable law;</li>
+    <li>Rent, lease, lend, sell, sublicense, distribute, or otherwise transfer the App to any third party;</li>
+    <li>Remove, alter, or obscure any proprietary notices on the App;</li>
+    <li>Use the App in any unlawful manner or in violation of this Agreement, the Terms of Service, or any applicable law.</li>
+  </ul>
+
+  <h2>3. Informational Use Only — No Professional Advice</h2>
+  <p>The App uses artificial intelligence to produce plain-English explanations of documents. These explanations are for general informational purposes only and may be incomplete, inaccurate, or misleading. The App does not provide legal, medical, financial, or other professional advice. You should always consult a qualified professional before making any decision based on a document. Your reliance on any explanation produced by the App is at your own risk.</p>
+
+  <h2>4. Ownership</h2>
+  <p>The App is licensed, not sold, to you. Vivabyte and its licensors retain all right, title, and interest in and to the App, including all intellectual property rights. This Agreement does not grant you any rights to Vivabyte's trademarks or service marks.</p>
+
+  <h2>5. Third-Party Services</h2>
+  <p>The App transmits document text to Anthropic's Claude API to generate explanations. Your use of such third-party services is subject to their respective terms and privacy policies. Vivabyte is not responsible for the practices of any third-party service. Please review our <a href="/clavidocus/privacy">Privacy Policy</a> for details on how document content is handled.</p>
+
+  <h2>6. Apple App Store Terms</h2>
+  <p>If you download the App from the Apple App Store, the following additional terms apply. This Agreement is concluded between you and Vivabyte only, not with Apple Inc. ("Apple"). Apple is not responsible for the App or its content. Apple has no obligation to provide any maintenance or support for the App. In the event the App fails to conform to any applicable warranty, you may notify Apple, and Apple will refund the purchase price (if any) to you; to the maximum extent permitted by law, Apple has no other warranty obligation with respect to the App. Apple is not responsible for addressing any claims by you or any third party relating to the App, including product-liability claims, claims that the App fails to conform to legal or regulatory requirements, and claims arising under consumer-protection or similar legislation. Apple and Apple's subsidiaries are third-party beneficiaries of this Agreement, and upon your acceptance, Apple will have the right to enforce this Agreement against you as a third-party beneficiary.</p>
+
+  <h2>7. Disclaimer of Warranties</h2>
+  <p>THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, OR STATUTORY, INCLUDING WITHOUT LIMITATION THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. VIVABYTE DOES NOT WARRANT THAT THE APP WILL BE UNINTERRUPTED, ERROR-FREE, OR FREE OF HARMFUL COMPONENTS, OR THAT ANY EXPLANATION IT PRODUCES WILL BE ACCURATE OR COMPLETE.</p>
+
+  <h2>8. Limitation of Liability</h2>
+  <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, VIVABYTE LLC SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS, DATA, OR GOODWILL, ARISING OUT OF OR IN CONNECTION WITH YOUR USE OF OR INABILITY TO USE THE APP, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
+
+  <h2>9. Termination</h2>
+  <p>This Agreement is effective until terminated. Your rights under this Agreement will terminate automatically without notice if you fail to comply with any of its terms. Upon termination, you must cease all use of the App and delete all copies from your devices.</p>
+
+  <h2>10. Governing Law</h2>
+  <p>This Agreement is governed by the laws of the State of Wyoming, without regard to its conflict-of-law provisions. Any disputes arising under this Agreement shall be resolved in the courts of Wyoming.</p>
+
+  <h2>11. Contact</h2>
+  <p>Questions about this Agreement? Contact us at:</p>
+  <p>Vivabyte LLC<br /><a href="mailto:ron@vivabyte.app">ron@vivabyte.app</a></p>
+</main>
+
+<footer>
+  <span class="footer-logo">vivabyte.app</span>
+  <div class="footer-links">
+    <a href="/clavidocus/privacy">Privacy Policy</a>
+    <a href="/clavidocus/terms">Terms of Service</a>
+    <a href="/clavidocus/eula">EULA</a>
+    <a href="mailto:ron@vivabyte.app">Contact</a>
+  </div>
+  <p class="footer-copy">© 2026 Vivabyte LLC. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
